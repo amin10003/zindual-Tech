@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
+
 <body>
   <!--
   This example requires updating your template:
@@ -15,53 +17,60 @@
   <body class="h-full">
   ```
 -->
-<!-- bg-[#F5F0E6] -->
-<div class="flex min-h-full flex-col justify-center bg-grey-800 px-6 py-12 lg:px-8 ">
-  <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-    
-    <h2 class="mt-10 text-center text-2xl font-bold tracking-tight text-black">Register for an account</h2>
+  <!-- bg-[#F5F0E6] -->
+  <div class="flex min-h-full flex-col justify-center bg-grey-800 px-6 py-12 lg:px-8 ">
+    <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+
+      <h2 class="mt-10 text-center text-2xl font-bold tracking-tight text-black">Register for an account</h2>
+    </div>
+
+    <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+      <form action="#" method="POST" class="space-y-6 bg-gray-800 p-6 rounded-lg">
+        <div>
+          <label for="fullName" class="block text-sm/6 font-medium text-white ">Full Name</label>
+          <div class="mt-2 placeholder:text-black">
+            <input id="fullName" type="text" name="fullName" placeholder="John Doe" required autocomplete="fullName"
+              class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+          </div>
+        </div>
+        <div>
+          <label for="email" class="block text-sm/6 font-medium text-white">Email address</label>
+          <div class="mt-2">
+            <input id="email" type="email" name="email" required autocomplete="email"
+              class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6"
+              placeholder="john.doe@example.com" />
+          </div>
+        </div>
+
+        <div>
+          <div class="flex items-center justify-between">
+            <label for="phoneNumber" class="block text-sm/6 font-medium text-white">Phone Number</label>
+
+          </div>
+          <div class="mt-2">
+            <input id="phoneNumber" type="tel" name="phoneNumber" required autocomplete="phoneNumber"
+              class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6"
+              placeholder="0712345678" />
+          </div>
+        </div>
+        <div>
+          <label for="password" class="block text-sm font-medium text-white">Password</label>
+          <div class="mt-2">
+            <input id="password" type="password" name="password" required
+              class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-black outline outline-1 outline-white/10 focus:outline-2 focus:outline-indigo-500 sm:text-sm"
+              placeholder="Enter your password" />
+          </div>
+        </div>
+
+        <div>
+          <button type="submit"
+            class="flex w-full justify-center rounded-md bg-indigo-500 px-3 py-1.5 text-sm/6 font-semibold text-black hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Register</button>
+        </div>
+      </form>
+
+    </div>
   </div>
-
-  <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-    <form action="#" method="POST" class="space-y-6 bg-gray-800 p-6 rounded-lg">
-      <div>
-        <label for="fullName" class="block text-sm/6 font-medium text-white " >Full Name</label>
-        <div class="mt-2 placeholder:text-black">
-          <input id="fullName" type="text" name="fullName"  placeholder="John Doe" required autocomplete="fullName" class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
-        </div>
-      </div>
-      <div>
-        <label for="email" class="block text-sm/6 font-medium text-white">Email address</label>
-        <div class="mt-2">
-          <input id="email" type="email" name="email" required autocomplete="email"  class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" placeholder="john.doe@example.com"/>
-        </div>
-      </div>
-
-       <div>
-        <div class="flex items-center justify-between">
-          <label for="phoneNumber" class="block text-sm/6 font-medium text-white">Phone Number</label>
-        
-        </div>
-        <div class="mt-2">
-          <input id="phoneNumber" type="tel" name="phoneNumber" required autocomplete="phoneNumber" class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6"  placeholder="0712345678"/>
-        </div>
-      </div>
-
-      <div>
-  <label for="password" class="block text-sm font-medium text-white">Password</label>
-  <div class="mt-2">
-    <input id="password" type="password" name="password" required
-    class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-black outline outline-1 outline-white/10 focus:outline-2 focus:outline-indigo-500 sm:text-sm" placeholder="Enter your password" />
-  </div>
-</div>
-
-      <div>
-        <button type="submit" class="flex w-full justify-center rounded-md bg-indigo-500 px-3 py-1.5 text-sm/6 font-semibold text-black hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Register</button>
-      </div>
-    </form>
-
-  </div>
-</div>
 
 </body>
+
 </html>

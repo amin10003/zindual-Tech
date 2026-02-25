@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML multimedia</title>
+</head>
+<body>
+    <h1>Welcome to HTML Multimedia</h1>
+
+    <p>In this section, we will explore how to use multimedia elements in HTML, including images, audio, and video.</p>
+
+    <h2>Images</h2>
+    <p>To add an image to your webpage, you can use the <code>&lt;img&gt;</code> tag. Here is an example:</p>
+    <pre><code>&lt;img src="path/to/image.jpg" alt="Description of image"&gt;</code></pre>
+    <img src="media/ene.jpg" alt="Example Image" width="300">
+
+    <h2>Audio</h2>
+    <p>To embed audio in your webpage, you can use the <code>&lt;audio&gt;</code> tag. Here is an example:</p>
+    <pre><code>&lt;audio controls&gt;
+  &lt;source src="path/to/audio.mp3" type="audio/mpeg"&gt;
+  Your browser does not support the audio element.
+&lt;/audio&gt;</code></pre>
+    <audio src="media/hees_kamil.mp3" controls></audio>
+
+    <h2>Video</h2>
+    <p>To embed video in your webpage, you can use the <code>&lt;video&gt;</code> tag. Here is an example:</p>
+    <pre><code>&lt;video width="320" height="240" controls&gt;
+  &lt;source src="path/to/video.mp4" type="video/mp4"&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;</code></pre>
+
+<video src="media/REVISIONS.mp4" controls width="320" height="240"></video>
+
+
+<br>
+
+<hr>
+
+    <h1>Responsive Images</h1>
+    <img src="image-300.jpg" srcset="image-300.jpg 300w, image-600.jpg 600w, image-900.jpg 900w"
+      sizes="(max-width: 600px) 100vw, 50vw" alt="Responsive Image">
+  
+
+</body>
+</html>

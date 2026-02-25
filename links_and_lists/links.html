@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links and Lists</title>
+
+    <style>
+        ol {
+            color: navy;
+            font-family: Arial, sans-serif;
+        }
+    
+        ol.roman {
+            list-style-type: upper-roman;
+        }
+    
+        li:hover {
+            color: #e44d26;
+            /* Changes color on hover */
+        }
+
+        #red{
+            background-color: red;
+            width: 100%;
+            height: 4px;
+        }
+
+
+         dl {
+      background-color: #e010a2;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 5px;
+   }
+   dt {
+      font-weight: bold;
+      color: #fcf7f7;
+      margin-top: 10px;
+   }
+   dd {
+      margin: 0 0 10px 20px;
+      color: #faefef;
+   }
+    </style>
+</head>
+<body>
+    <h1>Links and Lists</h1>
+    <h2>Links</h2>
+
+        <h1>Getting started with programming</h1>
+        <div>Visit <a href="https://zinduaschool.com">Zindua School</a> for more information.</div>
+
+        <br>
+
+        <a href="https://zinduaschool.com" target="_blank">Open Zindua School in a new tab</a>
+
+        <hr>
+
+        <h2>Lists</h2>
+        <ul>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ul>
+
+        <ol class="roman">
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ol>
+
+
+        <hr>
+
+        <ol>
+            <li>Fruits
+                <ol>
+                    <li>Apple</li>
+                    <li>Banana</li>
+                </ol>
+            </li>
+            <li>Vegetables
+                <ol type="i">
+                    <li>Carrot</li>
+                    <li>Broccoli</li>
+                </ol>
+            </li>
+        </ol>
+
+        <hr id="red">
+
+        
+    
+        
+        
+            <h2>Different Types Of Languages</h2>
+            <dl>
+                <dt>English:</dt>
+                <dd>English is a global language used for communication in politics, media, and art.</dd>
+        
+                <dt>Hindi:</dt>
+                <dd>An Indo-Aryan language spoken primarily in India as a first language by most people.</dd>
+        
+                <dt>French:</dt>
+                <dd>The official language in Canada, France, and many African nations.</dd>
+            </dl>
+
+
+           
+
+            <dl style="background-color: #0a1bd7; border: 1px solid #ddd; padding: 20px; border-radius: 5px;">
+                <dt style="margin: auto; text-align: center; font-weight: bold; margin-bottom: 10px;">Programming Languages</dt>
+                <dd>
+                    <dl style="background-color: #0b95e5; border: 1px solid #ddd; padding: 20px; border-radius: 5px;">
+                        <dt>Python</dt>
+                        <dd>A high-level, interpreted programming language.</dd>
+                        <dt>JavaScript</dt>
+                        <dd>A language primarily used for web development.</dd>
+                    </dl>
+                </dd>
+            </dl>
+        
+            <h1>Combining Lists</h1>
+            <ul>
+                <li>HTML
+                    <ol>
+                        <li>Syntax</li>
+                        <li>Elements</li>
+                        <li>Attributes</li>
+                    </ol>
+                </li>
+                <li>CSS
+                    <dl>
+                        <dt>Selectors</dt>
+                        <dd>Patterns used to select elements.</dd>
+                        <dt>Properties</dt>
+                        <dd>Characteristics to style elements.</dd>
+                    </dl>
+                </li>
+            </ul>
+
+    
+    
+    
+</body>
+</html>
